@@ -8,9 +8,7 @@ package hw0906;
 import java.util.Scanner;
 
 public class ArrayRepeater {
-	
 	public static void repeat (int[] a, int factor) {
-		
 		try {
 			printArray(a, 1);
 			System.out.println("factor = " + factor);
@@ -27,15 +25,13 @@ public class ArrayRepeater {
 						}
 					}
 				}
-			printArray(arr2, 2);
-			
+			printArray(arr2, 2);	
 		}catch(NegativeArraySizeException e) {
 			System.out.println("\nrepeat(a, factor) --> {}");
 		}
 	}
 	
 	public static void printArray(int[] array, int x) {
-		
 		if (x == 1) {
 			System.out.print("a = {");
 			for (int i = 0; i < array.length; i++) {
@@ -52,7 +48,6 @@ public class ArrayRepeater {
 	}
 	
 	public static void main(String[] args) {
-		
 		int num2;
 		do {
 			int[] arr = {1, 2, 3};	
@@ -66,5 +61,4 @@ public class ArrayRepeater {
 		}
 		while (num2 == 1);
 	}
-	
 }
